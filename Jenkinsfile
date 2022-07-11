@@ -8,7 +8,7 @@ pipeline {
      stage('Build docker image') {
           // this stage also builds and tests the Java project using Maven
           steps {
-            fileOperations([fileRenameOperation(source: 'test.html', destination:"test-${HTML}.html")])
+            fileOperations([fileRenameOperation(source: 'folder/test.html', destination:"test-${HTML}.html")])
             
           }
       }
